@@ -1,0 +1,14 @@
+﻿
+<META Http-Equiv="Pragma" Content="no-cache">
+  <head>
+  <script language="JavaScript" src="FusionCharts/FusionCharts.js"></script>
+  </head>
+    <body bgcolor="#FFFFFF"  onbeforeunload="opertion.location.reload();">
+      <div id="chartdiv" align="center">loading chart, please wait.</div>
+      <script type="text/javascript">
+         var myChart = new FusionCharts("FusionCharts/FCF_MSColumn3D.swf", "Column3D", "500", "400");
+        myChart.setDataURL("data.XML");
+        myChart.render("chartdiv");
+      </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+
+
+<LayoutModificationTemplate
+    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    Version="1">
+  <RequiredStartGroupsCollection>
+    <RequiredStartGroups
+      Region="DE|ES|FR|GB|IT|US">
+      <AppendGroup
+        Name="Fabrikam Group 1">
+        <start:Tile
+          AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word"
+          Size="2x2"
+          Row="0"
+          Column="0"/>
+        <start:DesktopApplicationTile
+          DesktopApplicationID="Microsoft.Windows.Explorer"
+          Size="2x2"
+          Row="0"
+          Column="2"/>
+        <start:Tile
+          AppUserModelID="Microsoft.Office.Excel_8wekyb3d8bbwe!microsoft.excel"
+          Size="2x2"
+          Row="0"
+          Column="4"/>
+      </AppendGroup>    
+      <AppendGroup
+        Name="Fabrikam Group 2">
+        <start:Tile
+          AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader"
+          Size="2x2"
+          Row="0"
+          Column="0"/>
+        <start:DesktopApplicationTile
+          DesktopApplicationID="http://www.bing.com/"
+          Size="2x2"
+          Row="0"
+          Column="2"/>
+        <start:DesktopApplicationTile
+          DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"
+          Size="2x2"
+          Row="0"
+          Column="4"/>
+      </AppendGroup>
+    </RequiredStartGroups>
+    <RequiredStartGroups>
+      <AppendGroup
+        Name="Fabrikam Group 1">
+        <start:Tile
+          AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word"
+          Size="2x2"
+          Row="0"
+          Column="0"/>
+        <start:SecondaryTile
+          AppUserModelID="Microsoft.Windows.Spartan_cw5n1h2txyewy!Microsoft.Spartan.Spartan"
+          TileID="FabrikamWeblinkTile"
+          Arguments="http://www.fabrikam.com"
+          DisplayName="Fabrikam"
+          Square150x150LogoUri="ms-appx:///Assets/SpartanMedium.png"
+          ShowNameOnSquare150x150Logo="true"
+          BackgroundColor="#FF112233"
+          Size="2x2"
+          Row="0"
+          Column="2"/>
+      </AppendGroup>    
+    </RequiredStartGroups>
+  </RequiredStartGroupsCollection> 
+  <TopMFUApps>
+    <Tile AppUserModelID="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+  </TopMFUApps>  
+</LayoutModificationTemplate>
